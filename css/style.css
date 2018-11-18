@@ -425,9 +425,9 @@ h3 {
 .cards__back {
     display: none;
 }
-.col--cards:hover .cards__front {
+.cards:hover .cards__front {
     display: none;
 }
-.col--cards:hover .cards__back {
+.cards:hover .cards__back {
     display: block;
 }
