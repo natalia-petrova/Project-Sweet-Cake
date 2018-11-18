@@ -9,10 +9,9 @@ body {
 }
 .header {
     height: 900px;
-    background-image: url(../img/header_background.png), url(../img/slider_01_01.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 20%, 76%;
-    background-position-x: 0%, 100%;
+    background-image: url(../img/header_back_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .container {
     width: 100%;
@@ -50,7 +49,7 @@ a {
     text-decoration: none;
     letter-spacing: -0.01em;
     position: relative;
-    padding: 30px 5px;
+    padding: 30px 10px;
 }
 .nav__link:after {
     position: absolute;
@@ -313,7 +312,7 @@ h3 {
     padding-top: 60px;
     padding-left: 60px;
 }
-.gallery__slider {
+.gallery__main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -352,6 +351,7 @@ h3 {
     height: 615px;
     background-image: url(../img/order_back.png);
     background-repeat: no-repeat;
+    background-position: center;
 }
 .order__header {
     color: #303030;
@@ -430,4 +430,5 @@ h3 {
 }
 .cards:hover .cards__back {
     display: block;
+    transition: 0.5s;
 }
