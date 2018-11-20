@@ -17,6 +17,17 @@
 </head>
 <body>
     <div class="header">
+        <div class="slider__auto">
+            <div class="slide">
+                <img src="./img/header_back_01.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/header_back_02.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/header_back_03.png" alt="">
+            </div>
+        </div>
         <div class="container">
             <div class="header__headline">
                 <div class="header__logo">
@@ -589,10 +600,20 @@
     <script>
         $(document).ready(function () {
             $('.slider').slick({
-                // infinite: true,
                 dots: true,
+                arrows: false,
                 slidesToShow: 1,
                 slidesToScroll: 1
+            });
+        });
+        $(document).ready(function () {
+            $('.slider__auto').slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
             });
         });
     </script>
