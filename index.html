@@ -27,6 +27,9 @@
             <div class="slide">
                 <img src="./img/header_back_03.png" alt="">
             </div>
+            <div class="slide">
+                <img src="./img/header_back_04.png" alt="">
+            </div>
         </div>
         <div class="container">
             <div class="header__headline">
@@ -38,13 +41,13 @@
                 <nav class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html#top1" class="nav__link">О нас</a></li>
-                        <img src="./img/header_ellipse.png" alt="" class="nav__img">
+                        <li class="nav__item"><img src="./img/header_ellipse.png" alt="" class="nav__img">
                         <li class="nav__item"><a href="index.html#top2" class="nav__link">Ассортимент</a></li>
-                        <li class="nav__item"><img src="./img/header_ellipse.png" alt=""></li>
+                        <li class="nav__item"><img src="./img/header_ellipse.png" alt="" class="nav__img"></li>
                         <li class="nav__item"><a href="index.html#top3" class="nav__link">Галерея</a></li>
-                        <li class="nav__item"><img src="./img/header_ellipse.png" alt=""></li>
+                        <li class="nav__item"><img src="./img/header_ellipse.png" alt="" class="nav__img"></li>
                         <li class="nav__item"><a href="index.html#top4" class="nav__link">Отзывы</a></li>
-                        <li class="nav__item"><img src="./img/header_ellipse.png" alt=""></li>
+                        <li class="nav__item"><img src="./img/header_ellipse.png" alt="" class="nav__img"></li>
                         <li class="nav__item"><a href="index.html#top5" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
@@ -86,9 +89,9 @@
             <nav class="portfolio__nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="javascript:void(0)" class="filter__link" data-filter="cake">Торты</a></li>
-                    <li class="nav__item"><img src="./img/header_ellipse.png" alt=""></li>
+                    <li class="nav__item"><img src="./img/header_ellipse.png" alt="" class="nav__img"></li>
                     <li class="nav__item"><a href="javascript:void(0)" class="filter__link" data-filter="cupcake">Капкейки</a></li>
-                    <li class="nav__item"><img src="./img/header_ellipse.png" alt=""></li>
+                    <li class="nav__item"><img src="./img/header_ellipse.png" alt="" class="nav__img"></li>
                     <li class="nav__item"><a href="javascript:void(0)" class="filter__link" data-filter="cookies">Печенье</a></li>
                 </ul>
             </nav>
@@ -591,7 +594,9 @@
                 dots: true,
                 arrows: false,
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                customPaging: function(slider, i) {
+        return '<a href="javascript:void(0)"><img src="./img/slider_dot.png"/><img src="./img/cherry_dot.png"></a>';},
             });
         });
         $(document).ready(function () {
@@ -601,7 +606,9 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 3000
+                autoplaySpeed: 3000,
+                customPaging: function(slider, i) {
+        return '<a href="javascript:void(0)"><img src="./img/slider_dot.png"/><img src="./img/cherry_dot.png"></a>';},
             });
         });
     </script>

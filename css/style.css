@@ -43,6 +43,9 @@ body {
     padding: 0;
     margin: 0;
 }
+.header__logo--main:focus {
+    outline: none;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -84,11 +87,15 @@ a {
     opacity: 1;
     transform: translateY(0);
 }
+.nav__link:focus {
+    color: #db748a;
+    outline: none;
+}
 .nav__img {
     width: 15px;
     height: 15px;
     padding: 0;
-    margin: 0;
+    margin: 5px 0px;
 }
 h1, h2, h3 {
     padding: 0;
@@ -140,6 +147,9 @@ h3 {
     background-color: #e67b94;
     box-shadow: 0 5px 14.3px 0.8px rgba(219, 116, 138, 0.35);
 }
+.btn__header:focus {
+    outline: none;
+}
 .about {
     min-height: 462px;
     background-color: #faeaee;
@@ -163,11 +173,13 @@ h3 {
 }
 .portfolio {
     height: 1290px;
-    background-image: url(../img/assortiment_back.png);
+    background-image: url(../img/assorti_back_01.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 0%;
     overflow: hidden;
+}
+.cupcakes, .cookies {
+    display: none;
 }
 .portfolio__header {
 	color: #303030;
@@ -232,6 +244,10 @@ h3 {
 .filter__link:hover:after {
     opacity: 1;
     transform: translateY(0);
+}
+.filter__link:focus {
+    color: #db748a;
+    outline: none;
 }
 .portfolio__image {
     position: relative;
@@ -321,6 +337,10 @@ h3 {
 }
 .gallery {
     height: 885px;
+    background-image: url(../img/assorti_back_02.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-position-x: 53%;
 }
 .gallery__header {
     text-align: center;
@@ -338,7 +358,7 @@ h3 {
     justify-content: space-between;
 }
 .gallery__img {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .review {
     height: 510px;
@@ -404,6 +424,10 @@ h3 {
     padding-left: 20px;
     margin: 10px 0px;
 }
+.order__name:focus, .order__tel:focus {
+    outline-color: #db748a; 
+    opacity: 0.6;
+} 
 .order__tel {
     margin-bottom: 20px;
 }
@@ -420,6 +444,9 @@ h3 {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 36px;
+}
+.footer__contacts:focus a {
+    outline: none;
 }
 .contacts__img {
     padding-right: 15px;
@@ -470,9 +497,26 @@ h3 {
     border-radius: 50%;
 }
 .slick-dots li.slick-active button {
-    background-color: #8c8c8c;
+    outline: none;
+}
+.slick-dots li img:nth-child(1) {
+    display: block;
+}
+.slick-dots li img:nth-child(2) {
+    display: none;
+}
+.slick-dots li.slick-active img:nth-child(1) {
+    display: none;
+}
+.slick-dots li.slick-active img:nth-child(2) {
+    display: block;
 }
 .slick-dots li button:before {
     display: none;
 }
-
+.slick-dots li.slick-active img:focus {
+    outline: none;
+}
+.gallery__main .slick-dots li {
+    position: relative; top: 30px;
+}
