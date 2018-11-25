@@ -9,10 +9,6 @@ body {
 }
 .header {
     height: 900px;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
     position: relative;
 }
 .slider__auto {
@@ -149,6 +145,10 @@ h3 {
 }
 .btn__header:focus {
     outline: none;
+}
+.btn__header:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
 }
 .about {
     min-height: 462px;
@@ -340,7 +340,7 @@ h3 {
     background-image: url(../img/assorti_back_02.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-position-x: 53%;
+    background-position-x: 60%;
 }
 .gallery__header {
     text-align: center;
@@ -445,7 +445,7 @@ h3 {
 	font-weight: 700;
 	line-height: 36px;
 }
-.footer__contacts:focus a {
+.footer__contacts a:focus {
     outline: none;
 }
 .contacts__img {
@@ -462,6 +462,9 @@ h3 {
     padding: 25px 5px;
     color: white;
     font-size: 50px;
+}
+.social__cards a:focus, .social__cards a:active {
+    outline: none;
 }
 .cards__back {
     display: none;
@@ -513,9 +516,6 @@ h3 {
 }
 .slick-dots li button:before {
     display: none;
-}
-.slick-dots li.slick-active img:focus {
-    outline: none;
 }
 .gallery__main .slick-dots li {
     position: relative; top: 30px;
