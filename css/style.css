@@ -254,6 +254,11 @@ h3 {
     display: inline-block;
     cursor: pointer;
 }
+.portfolio__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .portfolio__overlay {
     position: absolute;
     background-color:rgba(207, 225, 227, 0.8);
@@ -266,7 +271,6 @@ h3 {
     text-align: left;
     opacity: 0;
     transition: 0.5s;
-    display: block;
 }
 .portfolio__text {
     position: absolute;
@@ -280,6 +284,7 @@ h3 {
 	font-weight: 700;
     line-height: 27px;
     transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
 }
 .portfolio__image:hover .portfolio__overlay {
     display: block;
