@@ -175,8 +175,8 @@ h3 {
     height: 1290px;
     background-image: url(../img/assorti_back_01.png);
     background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
+    background-position: center top;
+    background-position-x: 0%;
 }
 .cupcakes, .cookies {
     display: none;
@@ -345,7 +345,7 @@ h3 {
     background-image: url(../img/assorti_back_02.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-position-x: 60%;
+    background-position-x: 55%;
 }
 .gallery__header {
     text-align: center;
@@ -396,7 +396,7 @@ h3 {
     height: 615px;
     background-image: url(../img/order_back.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
 }
 .order__header {
     color: #303030;

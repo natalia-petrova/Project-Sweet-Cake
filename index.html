@@ -58,7 +58,7 @@
                 <h3>Мы сделаем ваш праздник незабываемым
                     <br>и исполним любые пожелания
                 </h3>
-                <a href="javascript:void(0)" class="btn__header">Хочу десерт</a>
+                <button class="btn__header" name="submit"><a href="index.html#top6">Хочу десерт</a></button>
             </div>
         </div>
     </div>
@@ -509,15 +509,19 @@
             </div>
         </div>
     </div>
-    <div class="order">
+    <div class="order"><a name="top6"></a>
         <div class="container">
             <div class="col col-7 offset-5 order--form">
                 <p class="order__header">Закажите свой идеальный десерт</p>
                 <p class="order__text">Оставьте свои контактные данные и мы перезвоним вам в ближайшее время, чтобы ответить на все вопросы</p>
                 <form action="#" method="get">
-                    <input type="text" class="order__name" id="" placeholder="Ваше имя">
-                    <input type="tel" class="order__tel" id="" placeholder="Ваш номер телефона">
-                    <a href="javascript:void(0)" class="btn__header">Хочу десерт</a>
+                    <label for="">
+                        <input type="text" class="order__name" name="user" placeholder="Ваше имя" required minlength="5" maxlength="20">
+                    </label>
+                    <label for="">
+                        <input type="digit" class="order__tel" name="tel" placeholder="Ваш номер телефона" required pattern="[0-9]{10,18}">
+                    </label>
+                    <button class="btn__header" name="submit" value="send">Хочу десерт</button>
                 </form>
             </div>
         </div>
