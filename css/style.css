@@ -396,7 +396,8 @@ h3 {
     height: 615px;
     background-image: url(../img/order_back.png);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
+    background-size: cover;
 }
 .order__header {
     color: #303030;
