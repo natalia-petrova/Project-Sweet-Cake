@@ -31,6 +31,7 @@
                 <img src="./img/header_back_04.png" alt="">
             </div>
         </div>
+        <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
         <div class="container">
             <div class="header__headline">
                 <div class="header__logo">
@@ -594,16 +595,6 @@
     <script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('.slider').slick({
-                dots: true,
-                arrows: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                customPaging: function(slider, i) {
-        return '<a href="javascript:void(0)"><img src="./img/slider_dot.png"/><img src="./img/cherry_dot.png"></a>';},
-            });
-        });
-        $(document).ready(function () {
             $('.slider__auto').slick({
                 dots: true,
                 arrows: false,
@@ -615,6 +606,31 @@
         return '<a href="javascript:void(0)"><img src="./img/slider_dot.png"/><img src="./img/cherry_dot.png"></a>';},
             });
         });
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                customPaging: function(slider, i) {
+        return '<a href="javascript:void(0)"><img src="./img/slider_dot.png"/><img src="./img/cherry_dot.png"></a>';},
+            });
+        });
+    </script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </html>
