@@ -365,7 +365,6 @@ h3 {
     background-image: url(../img/assorti_back_02.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-position-x: 55%;
 }
 .gallery__header {
     text-align: center;
@@ -510,8 +509,7 @@ h3 {
 	font-family: 'Raleway';
 	font-size: 18px;
 	font-weight: 700;
-    line-height: 36px;
-    padding-top: 50px;
+    padding-top: 55px;
     text-align: center;
 }
 .slide {
