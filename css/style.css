@@ -48,6 +48,7 @@ a {
 }
 .header__nav {
     padding-top: 55px;
+    overflow: hidden;
 }
 .nav__list {
     list-style: none;
@@ -547,6 +548,9 @@ h3 {
 .gallery__main .slick-dots li {
     position: relative; top: 30px;
 }
+.header__nav .icon {
+    display: none;
+}
 @media (max-width: 1400px) {
     .header {
         height: 100vh;
@@ -558,3 +562,92 @@ h3 {
         padding-top: 70px;
     }
  }
+@media screen and (max-width: 320px) {
+    .header__headline {
+        padding-top: 5px;
+    }
+    .header__nav {
+        padding-top: 5px;
+        margin-left: 80px;
+        position: absolute;
+        z-index: 1;
+    }
+    .nav__link {
+        font-size: 14px;
+        padding: 10px 5px;
+        background-color: #e67b94;
+    }
+    h1 {
+        font-size: 2.5em;
+        line-height: 20px;
+        padding-top: 70px;
+    }
+    h2 {
+        font-size: 1.5em;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+    h3 {
+        font-size: 0.8em;
+        line-height: 20px;
+        padding-bottom: 15px;
+        margin-right: 40px;
+    }
+    .btn__header {
+        width: 130px;
+        height: 30px;
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .logo__cake {
+        width: 70%;
+    }
+    .about {
+        min-height: 330px;
+    }
+    .about__header {
+        font-size: 1.5em;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .row--about {
+        font-size: 0.8em;
+        line-height: 20px;
+        text-align: center;
+    }
+    .icon_about {
+        width: 70%;
+    }
+    .portfolio {
+        height: 900px;
+    }
+    .portfolio__header {
+        font-size: 1.5em;
+        padding-top: 30px;
+    }
+ }
+ @media screen and (max-width: 700px) {
+    .nav__list {
+        display: none;
+    }
+    .nav__img {
+        display: none;  
+    }
+    .nav__list a.icon {
+        display: block;
+    }
+    .nav__list.responsive {position: relative;}
+    .nav__list.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav__list.responsive a {
+        display: block;
+    }
+    .nav__list.responsive {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+}

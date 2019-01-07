@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <div class="header">
@@ -41,7 +40,7 @@
                     </a> 
                 </div>
                 <nav class="header__nav">
-                    <ul class="nav__list">
+                    <ul class="nav__list" id="myTopnav">
                         <li class="nav__item"><a href="index.html#top1" class="nav__link">О нас</a></li>
                         <li class="nav__item"><img src="./img/header_ellipse.png" alt="" class="nav__img">
                         <li class="nav__item"><a href="index.html#top2" class="nav__link">Ассортимент</a></li>
@@ -53,6 +52,9 @@
                         <li class="nav__item"><a href="index.html#top5" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
             </div>
             <div class="header__text">
                 <h1>Блаженство</h1>
@@ -71,15 +73,15 @@
             </div>
             <div class="row row--about">
                 <div class="col col-4">
-                    <img src="./img/icon_02_01.png" alt="">
+                    <img src="./img/icon_02_01.png" alt="" class="icon_about">
                     <p>Мы используем только свежие натуральные ингридиенты</p>
                 </div>
                 <div class="col col-4">
-                    <img src="./img/icon_02_02.png" alt="">
+                    <img src="./img/icon_02_02.png" alt="" class="icon_about">
                     <p>Не храним готовый продукт больше суток</p>
                 </div>
                 <div class="col col-4">
-                    <img src="./img/icon_02_03.png" alt="">
+                    <img src="./img/icon_02_03.png" alt="" class="icon_about">
                     <p>Готовим эксклюзивные десерты по вашим пожеланиям</p>
                 </div>
             </div>
@@ -633,5 +635,6 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+     <script src="./js/script.js"></script>
 </body>
 </html>
