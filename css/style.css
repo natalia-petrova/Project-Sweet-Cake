@@ -462,6 +462,9 @@ h3 {
 .order__tel {
     margin-bottom: 20px;
 }
+.order--320 {
+    display: none;
+}
 .footer {
     height: 400px;
     background-color: #b7d9dd;
