@@ -332,6 +332,8 @@ h3 {
     height: 491px;
     background-image: url(../img/how_we_work_back.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .work__header {
     text-align: center;
@@ -548,7 +550,7 @@ h3 {
 .gallery__main .slick-dots li {
     position: relative; top: 30px;
 }
-.header__nav .icon {
+.nav__list #myTopnav {
     display: none;
 }
 @media (max-width: 1400px) {
@@ -599,7 +601,7 @@ h3 {
         font-size: 14px;
         padding: 5px 15px;
     }
-    .logo__cake {
+    .header__logo--main {
         width: 70%;
     }
     .about {
@@ -610,45 +612,119 @@ h3 {
         padding-top: 20px;
         padding-left: 0px;
     }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: center;
+    }
     .row--about {
         font-size: 0.8em;
         line-height: 20px;
         text-align: center;
     }
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
     .icon_about {
-        width: 70%;
+        max-width: 50%;
     }
     .portfolio {
-        height: 900px;
+        height: 2200px;
     }
     .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
         font-size: 1.5em;
         padding: 30px 0px 0px 0px;
     }
     .portfolio__text, .type__info {
-        font-size: 10px;
+        font-size: 0.7em;
         line-height: 20px;
     }
-    .work__img {
-        width: 90%;
-        padding: 0;
+    .portfolio__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 16.875em;
+        height: 3em;
+    }
+    .work {
+        height: 750px;
     }
     .work__bald, .work__stage {
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: 20px;
         text-align: center;
     }
+    .work__img {
+        display: none;
+    }
+    .gallery {
+        height: 1500px;
+    }
+    .gallery__main img {
+        display: flex;
+        max-width: 100%;
+        padding: 2px 2px;
+    }
+    .review {
+        height: 500px;
+    }
     .review__main {
-        font-size: 10px;
+        font-size: 0.8em;
         line-height: 20px;
+    }
+    .review__img {
+        padding-top: 0;
+        padding-left: 3.5em;
     }
     .quote__img {
         display: none;
     }
     .order {
-        background-image: none;
+        height: 450px;
     }
-
+    .order__text {
+        font-size: 0.8em;
+    }
+    .order__name, .order__tel {
+        font-size: 0.8em;
+        line-height: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .order--form {
+        display: none;
+    }
+    .order--320 {
+        display: block;
+    }
+    .footer {
+        height: 650px;
+        text-align: center;
+    }
+    .row--back {
+        padding-top: 15px;
+    }
+    .footer__contacts {
+        font-size: 0.8em;
+        line-height: 22px;
+    }
+    .contacts__img {
+        display: none;
+    }
+    .contacts__phone {
+        padding-left: 0;
+    }
+    .social__cards {
+        padding: 0;
+    }
+    .instagram {
+        padding-right: 10%;
+    }
+    .copyright {
+        padding-top: 0;
+    }
  }
  @media screen and (max-width: 700px) {
     .nav__list {
