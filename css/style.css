@@ -142,6 +142,10 @@ h3 {
     transition: .3s;
     width: 270px;
     height: 60px;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
 }
 .btn__header:hover {
     background-color: #e67b94;
@@ -578,7 +582,7 @@ h3 {
         font-size: 3em;
         padding-top: 30px;
     }
-    .work__main, .gallery__main, .review__main {
+    .row--about, .portfolio__gallery, .work__main, .gallery__main, .review__main, .order--form, .order--320 {
         padding-bottom: 30px;
     }
     /*.img {
@@ -595,7 +599,7 @@ h3 {
         width: auto;
         height: auto;
         font-size: 1.5em;
-        padding: 1% 2%;
+        padding: 3% 7%;
     }
     .work__img {
         max-width: 90%;
@@ -636,7 +640,7 @@ h3 {
     .row--about, .work__main, .review__main, .order__text {
         font-size: 1.3em;
     }
-    .portfolio__text {
+    .portfolio__overlay {
         max-width: 100%;
     }
     .footer__contacts, .social__cards {
@@ -725,7 +729,7 @@ h3 {
         max-width: 100%;
         height: auto;
         font-size: 1.2em;
-        padding: 5px 15px;
+        padding: 3% 7%;
     }
     .gallery__main img {
         padding: 2px 2px;
@@ -757,9 +761,6 @@ h3 {
         font-size: 0.8em;
         line-height: 20px;
         text-align: center;
-    }
-    .icon--about {
-        max-width: 50%;
     }
     .about__header, .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
         font-size: 1.5em;
@@ -839,5 +840,11 @@ h3 {
     .nav__link:hover .menu__icon {
         position: absolute;
         z-index: 1;
+    }
+    .menu__icon {
+        font-size: 2em;
+    }
+    .menu__icon:hover {
+        color: #db748a;
     }
  }
