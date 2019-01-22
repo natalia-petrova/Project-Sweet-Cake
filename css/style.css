@@ -576,7 +576,10 @@ h3 {
     }
     .about__header, .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
         font-size: 3em;
-        padding: 30px 0px 0px 0px;
+        padding-top: 30px;
+    }
+    .work__main, .gallery__main, .review__main {
+        padding-bottom: 30px;
     }
     /*.img {
         height: auto; - замена, убрать display:flex ниже!!!
@@ -607,7 +610,7 @@ h3 {
         max-width: 100%;
     }
     .order__name, .order__tel {
-        width: 545px;
+        max-width: 100%;
         height: 70px;
     }
     .row--back {
@@ -630,41 +633,22 @@ h3 {
     h3 {
         font-size: 1.3em;
     }
-    .row--about, .work__text, .review__main, .order__text {
+    .row--about, .work__main, .review__main, .order__text {
         font-size: 1.3em;
     }
     .portfolio__text {
         max-width: 100%;
     }
-    .order__name, .order__tel {
-        width: 400px;
-        height: 70px;
-    }
     .footer__contacts, .social__cards {
         font-size: 1em;
     }
 }
-@media screen and (min-width:321px) and (max-width: 480px) {
-    h1 {
-        font-size: 3.5em;
-    }
-    h2 {
-        font-size: 2.3em;
-    }
-    h3 {
-        font-size: 0.8em;
-    }
-    .btn__header {
-        width: 130px;
-        height: auto;
-        font-size: 14px;
-        padding: 5px 15px;
-    }
+@media screen and (max-width: 576px) {
     .about__header, .portfolio__header, .work__header, .gallery__header, .review__header, .order__header {
         font-size: 2em;
         padding: 25px 0px 0px 0px;
     }
-    .row--about, .work__text, .review__main, .order__text {
+    .row--about, .work__main, .review__main, .order__text {
         font-size: 1em;
     }
     .row {
@@ -683,16 +667,13 @@ h3 {
     .work__img {
         display: none;
     }
-    .gallery__main img {
-        padding: 2px 2px;
-    }
     .review__main {
         font-size: 0.8em;
         line-height: 20px;
     }
     .review__img {
         padding-top: 0;
-        padding-left: 30%;
+        margin: 0 auto;
     }
     .quote__img {
         display: none;
@@ -730,6 +711,26 @@ h3 {
         padding-top: 0;
     }
 }
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    h3 {
+        font-size: 0.8em;
+    }
+    .btn__header {
+        max-width: 100%;
+        height: auto;
+        font-size: 1.2em;
+        padding: 5px 15px;
+    }
+    .gallery__main img {
+        padding: 2px 2px;
+    }
+}
 @media screen and (max-width: 320px) {
     .header__headline {
         padding-top: 5px;
@@ -765,7 +766,7 @@ h3 {
         padding: 25px 0px 0px 0px;
     }
     .portfolio__text, .type__info {
-        font-size: 0.7em;
+        font-size: 0.8em;
         line-height: 20px;
     }
     .portfolio__text {
@@ -780,18 +781,12 @@ h3 {
         line-height: 20px;
         text-align: center;
     }
-    /*.review__img {
-        padding-top: 0;
-        padding-left: 3.5em;
-    }*/
     .order__text {
         font-size: 0.8em;
     }
     .order__name, .order__tel {
         font-size: 0.8em;
-        line-height: 50px;
-        width: 100%;
-        height: auto;
+        line-height: 20px;
     }
  }
  @media screen and (max-width: 700px) {
@@ -810,10 +805,13 @@ h3 {
         display: none;
     }
     .header__nav {
-        padding-top: 5px;
-        padding-left: 50%;
+        padding: 0;
         position: absolute;
         z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
     .header__headline {
         display: flex;
@@ -837,5 +835,9 @@ h3 {
         display: block;
         position: relative;
         width: 100%;
+    }
+    .nav__link:hover .menu__icon {
+        position: absolute;
+        z-index: 1;
     }
  }
